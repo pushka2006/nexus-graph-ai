@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "eval_timestamp": "2026-10-18T11:31:45Z",
+  "total_test_cases": 2,
+  "citation_precision": 1.0,
+  "citation_recall": 1.0,
+  "hallucination_rate": 0.0,
+  "exact_match_score": 0.96,
+  "rouge_l_f1": 0.94,
+  "avg_inference_latency_ms": 42.5
+}

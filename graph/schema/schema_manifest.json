@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NexusGraphAISchemaManifest",
+  "version": "1.0.0",
+  "node_types": [
+    {
+      "name": "Company",
+      "properties": ["id", "name", "domain", "headquarters", "founded", "tenant_id"]
+    },
+    {
+      "name": "Department",
+      "properties": ["id", "name", "code", "head", "budget", "tenant_id"]
+    },
+    {
+      "name": "Team",
+      "properties": ["id", "name", "department_id", "charter", "tenant_id"]
+    },
+    {
+      "name": "Person",
+      "properties": ["id", "name", "email", "role", "department_id", "security_clearance", "tenant_id"]
+    },
+    {
+      "name": "Project",
+      "properties": ["id", "name", "code", "status", "risk_level", "target_date", "tenant_id"]
+    },
+    {
+      "name": "Document",
+      "properties": ["id", "title", "version", "status", "classification", "last_updated", "content_summary", "tenant_id"]
+    },
+    {
+      "name": "Ticket",
+      "properties": ["id", "key", "title", "status", "severity", "created_at", "tenant_id"]
+    },
+    {
+      "name": "Meeting",
+      "properties": ["id", "title", "date", "summary", "tenant_id"]
+    },
+    {
+      "name": "Decision",
+      "properties": ["id", "title", "status", "decided_at", "rationale", "tenant_id"]
+    },
+    {
+      "name": "Task",
+      "properties": ["id", "title", "status", "priority", "due_date", "tenant_id"]
+    },
+    {
+      "name": "Incident",
+      "properties": ["id", "title", "status", "severity", "detected_at", "tenant_id"]
+    },
+    {
+      "name": "SecurityEvent",
+      "properties": ["id", "event_type", "severity", "timestamp", "ip_address", "resource", "tenant_id"]
+    },
+    {
+      "name": "Agent",
+      "properties": ["id", "name", "role", "description", "status", "tenant_id"]
+    },
+    {
+      "name": "Memory",
+      "properties": ["id", "type", "summary", "confidence", "verified", "tenant_id"]
+    },
+    {
+      "name": "Source",
+      "properties": ["id", "name", "uri", "hash", "ingested_at", "tenant_id"]
+    }
+  ],
+  "relationship_types": [
+    "MEMBER_OF",
+    "MANAGES",
+    "OWNS",
+    "ASSIGNED_TO",
+    "WORKS_ON",
+    "DEPENDS_ON",
+    "BLOCKED_BY",
+    "MENTIONS",
+    "DISCUSSED_IN",
+    "DECIDED_IN",
+    "SUPPORTED_BY",
+    "SUPERSEDES",
+    "RELATED_TO",
+    "REPORTED_BY",
+    "LINKED_TO",
+    "CREATED_BY",
+    "DERIVED_FROM",
+    "REMEMBERS",
+    "HANDOFF_TO"
+  ]
+}

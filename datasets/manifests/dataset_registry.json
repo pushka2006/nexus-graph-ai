@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-10-18T05:00:00Z",
+  "datasets": [
+    {
+      "name": "nexusworks_synthetic_enterprise",
+      "category": "mandatory_synthetic",
+      "version": "1.0",
+      "license": "Apache-2.0",
+      "source_url": "local://datasets/synthetic/nexusworks.json",
+      "download_method": "deterministic_generator",
+      "splits": {
+        "train": "100%",
+        "test": "evaluation_suite"
+      },
+      "transformation": "FalkorDB Cypher node and edge upserts with SHA-256 provenance hashes",
+      "entities_count": 309,
+      "relationships_count": 369,
+      "scenarios_included": [
+        "Project Atlas blocked by AD-104 awaiting approval",
+        "TIK-204 linked to Incident INC-08 and SEC-014",
+        "Policy v2.0 superseding v1.2 with KMS cloud encryption conflict",
+        "Marcus Chen multi-task dependency chain",
+        "Unauthorized worker service token privilege escalation"
+      ],
+      "permitted_use": "Commercial, Educational, and Hackathon demonstration"
+    },
+    {
+      "name": "hotpot_qa",
+      "category": "public_reasoning",
+      "version": "distractor",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://huggingface.co/datasets/hotpot_qa",
+      "download_method": "huggingface_datasets",
+      "splits": {
+        "train": "90447",
+        "validation": "7405"
+      },
+      "transformation": "Multi-hop graph path extraction for factual reasoning validation",
+      "permitted_use": "Research and offline evaluation"
+    },
+    {
+      "name": "squad",
+      "category": "public_reasoning",
+      "version": "2.0",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://huggingface.co/datasets/rajpurkar/squad_v2",
+      "download_method": "huggingface_datasets",
+      "splits": {
+        "train": "130319",
+        "validation": "11873"
+      },
+      "transformation": "Extractive question answering evaluation baseline",
+      "permitted_use": "Research and offline evaluation"
+    }
+  ]
+}

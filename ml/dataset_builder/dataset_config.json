@@ -1,0 +1,16 @@
+{
+  "dataset_name": "nexus_graph_qwen_instructions",
+  "version": "1.0.0",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "format": "chat_template_jsonl",
+  "splits": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "provenance": {
+    "source": "FalkorDB Knowledge Graph traversals",
+    "tenant_id": "tenant_nexus_main",
+    "scenarios": ["blocker_triage", "security_correlation", "policy_supersession"]
+  }
+}

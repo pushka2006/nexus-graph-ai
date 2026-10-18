@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.venv/
+.venv/
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database / Local storage
+*.db
+*.sqlite3
+nexus_metadata.db
+data/
+uploads/
+*.rdb
+temp-*.rdb
+
+# Node / Frontend
+frontend/node_modules/
+node_modules/
+frontend/.next/
+.next/
+out/
+.vercel
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+backend/.env.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.tempmediaStorage/
+.agents/
