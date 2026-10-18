@@ -194,12 +194,28 @@ export interface SystemHealth {
   environment: string;
   timestamp: string;
   falkordb: {
-    connected_to_live: boolean;
-    engine_mode: string;
-    graph_name: string;
-    node_count: number;
-    edge_count: number;
+    connected_to_live?: boolean;
+    connected?: boolean;
+    engine_mode?: string;
+    graph_name?: string;
+    node_count?: number;
+    edge_count?: number;
+    total_nodes?: number;
+    total_edges?: number;
+    latency_ms?: number;
+    status?: string;
+    host?: string;
+    port?: number;
+    query_success?: boolean;
+    error?: string;
   };
-  llm_provider: string;
-  primary_model: string;
+  llm_provider?: string;
+  primary_model?: string;
+  llm?: {
+    status?: string;
+    model_id?: string;
+    provider?: string;
+    is_local?: boolean;
+    [key: string]: any;
+  };
 }
